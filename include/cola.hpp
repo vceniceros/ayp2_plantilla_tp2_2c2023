@@ -29,7 +29,7 @@ public:
     void alta(T dato);
 
     // Pre: La cola no puede estar vacía.
-    // Post: Elimina el último dato.
+    // Post: Elimina el primer dato.
     T baja();
 
     // Pre: La cola no puede estar vacía.
