@@ -11,7 +11,7 @@ class item {
 private:
     std::string nombre;
     std::string tipo;
-    // Otros atributos relacionados al item.
+    // Otros atributos relacionados al ítem.
 
 public:
     // Constructor
@@ -21,19 +21,19 @@ public:
     item() = default;
 
     // Pre:
-    // Post: Muestra por pantalla la informacion del item.
+    // Post: Muestra por pantalla la información del ítem.
     void listar_informacion();
 
     // Pre:
-    // Post: Carga la informacion al stream de salida, con el formato especificado.
-    // NOTA: Utilizar este metodo (archivo << item) para cargar la informacion al archivo .csv.
+    // Post: Carga la información al stream de salida, con el formato especificado.
+    // NOTA: Utilizar este método (archivo << item) para cargar la información al archivo .csv.
     friend std::ostream& operator<<(std::ostream& os, const item& item);
 
     // Pre:
     // Post: Devuelve true si el nombre coincide.
     bool operator==(const std::string& nombre_recibido);
 
-    // Otros metodos relacionados al uso del item.
+    // Otros métodos relacionados al uso del ítem.
 };
 
 #endif
