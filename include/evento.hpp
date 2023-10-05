@@ -9,17 +9,17 @@ const std::string ACCION_APERTURA_MAPA = "APERTURA_MAPA";
 class evento {
 private:
     std::string accion_ejecutada;
-    // Otros atributos asociados a la descripcion del evento.
+    // Otros atributos asociados a la descripción del evento.
 
 public:
     // Constructor.
     explicit evento(std::string accion_ejecutada);
 
     // Pre:
-    // Post: Devuelve true si la accion coincide con la ejecutada.
+    // Post: Devuelve true si la acción coincide con la ejecutada.
     bool operator==(const std::string& accion);
 
-    // Otros metodos asociados a la clase.
+    // Otros métodos asociados a la clase.
 };
 
 #endif

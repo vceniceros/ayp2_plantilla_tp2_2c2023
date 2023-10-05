@@ -28,15 +28,15 @@ public:
     // Post: Agrega el dato al final de la cola.
     void alta(T dato);
 
-    // Pre: La cola no puede estar vacia.
-    // Post: Elimina el ultimo dato.
+    // Pre: La cola no puede estar vacía.
+    // Post: Elimina el último dato.
     T baja();
 
-    // Pre: La cola no puede estar vacia.
+    // Pre: La cola no puede estar vacía.
     // Post: Devuelve el primer dato en la cola.
     T primero();
 
-    // Pre: La cola no puede estar vacia.
+    // Pre: La cola no puede estar vacía.
     // Post: Devuelve el último dato en la cola.
     T ultimo();
 
@@ -45,7 +45,7 @@ public:
     size_t tamanio();
 
     // Pre: -
-    // Post: Devuelve true si la cola esta vacia (es decir, si no hay datos).
+    // Post: Devuelve true si la cola esta vacía (es decir, si no hay datos).
     bool vacio();
 
     // El constructor de copia está deshabilitado.
