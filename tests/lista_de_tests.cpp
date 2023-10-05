@@ -189,6 +189,13 @@ TEST_F(lista_de_tests, caso_borde_cursor_actual_se_elimina) {
     lista.alta(1);
     lista.alta(2);
     lista.alta(3);
+    lista.alta(4);
+
+    lista.reiniciar_cursor(true);
+    lista.avanzar(true);
+    lista.avanzar(true);
+    lista.baja(2);
+    EXPECT_FALSE(lista.puede_avanzar());
 
     lista.reiniciar_cursor(true);
     lista.baja(0);

@@ -21,7 +21,7 @@ private:
     nodo_de<T>* primer_nodo;
     nodo_de<T>* ultimo_nodo;
     nodo_de<T>* cursor;
-    // Nota: puede ser que no utilicen el indice.
+    // Nota: pueden no utilizar el indice. Estado inicial / no válido = -1.
     int indice_cursor;
     size_t cantidad_datos;
 
@@ -40,6 +40,7 @@ public:
     // Pre: La lista no puede estar vacia.
     // Post: Elimina el ultimo dato.
     // NOTA: Considerar que se puede dar de baja el nodo cursor.
+    // En tal caso, reiniciarlo al estado inicial.
     T baja();
 
     // Pre: El indice debe ser menor o igual que la cantidad de datos.
@@ -51,6 +52,7 @@ public:
     // Post: Elimina el dato en la posicion indicada.
     // Si el indice es igual a la cantidad de datos - 1, simplemente elimina el ultimo dato.
     // NOTA: Considerar que se puede dar de baja el nodo cursor.
+    // En tal caso, reiniciarlo al estado inicial.
     T baja(size_t indice);
 
     // Pre: La lista no puede estar vacia.
