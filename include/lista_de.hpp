@@ -3,24 +3,24 @@
 
 #include <exception>
 #include <cstdlib>
-#include "nodo_de.hpp"
+#include "Nodo_de.hpp"
 
-class lista_exception : public std::exception {
+class Lista_exception : public std::exception {
     // Excepcion especifica y exclusivamente para errores dentro de la lista.
     // Usar de la forma "throw lista_exception();" cuando una precondicion no se cumpla.
 
     // Ejemplo:
     //     if (condicion_de_error()){
-    //         throw lista_exception();
+    //         throw Lista_exception();
     //     }
 };
 
 template<typename T>
-class lista_de {
+class Lista_de {
 private:
-    nodo_de<T>* primer_nodo;
-    nodo_de<T>* ultimo_nodo;
-    nodo_de<T>* cursor;
+    Nodo_de <T>* primer_nodo;
+    Nodo_de <T>* ultimo_nodo;
+    Nodo_de <T>* cursor;
     // Nota: pueden no utilizar el índice. Estado inicial / no válido = -1.
     // La lista es 0-indexed.
     int indice_cursor;
@@ -28,11 +28,11 @@ private:
 
     // Pre: El índice debe ser menor que la cantidad de datos.
     // Post: Devuelve un puntero al nodo asociado al índice deseado.
-    nodo_de<T>* obtener_nodo(size_t indice);
+    Nodo_de <T>* obtener_nodo(size_t indice);
 
 public:
     // Constructor.
-    lista_de();
+    Lista_de();
 
     // Pre: -
     // Post: Agrega el dato al final de la lista.
@@ -89,13 +89,13 @@ public:
     bool vacio();
 
     // El constructor de copia está deshabilitado.
-    lista_de(const lista_de& l) = delete;
+    Lista_de(const Lista_de& l) = delete;
 
     // El operador = (asignación) está deshabilitado.
-    void operator=(const lista_de& l) = delete;
+    void operator=(const Lista_de& l) = delete;
 
     // Destructor.
-    ~lista_de();
+    ~Lista_de();
 };
 
 #endif

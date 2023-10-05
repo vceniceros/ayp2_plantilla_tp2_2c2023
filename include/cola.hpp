@@ -2,11 +2,11 @@
 #define COLA_HPP
 
 #include <exception>
-#include "nodo.hpp"
+#include "Nodo.hpp"
 
-class cola_exception : public std::exception {
+class Cola_exception : public std::exception {
     // Excepcion especifica y exclusivamente para errores dentro de la cola.
-    // Usar de la forma "throw cola_exception();" cuando una precondicion no se cumpla.
+    // Usar de la forma "throw Cola_exception();" cuando una precondicion no se cumpla.
 
     // Ejemplo:
     //     if (condicion_de_error()){
@@ -15,14 +15,14 @@ class cola_exception : public std::exception {
 };
 
 template<typename T>
-class cola {
+class Cola {
 private:
-    nodo<T>* primer_nodo;
-    nodo<T>* ultimo_nodo;
+    Nodo <T>* primer_nodo;
+    Nodo <T>* ultimo_nodo;
     size_t cantidad_datos;
 public:
     // Constructor.
-    cola();
+    Cola();
 
     // Pre: -
     // Post: Agrega el dato al final de la cola.
@@ -49,13 +49,13 @@ public:
     bool vacio();
 
     // El constructor de copia está deshabilitado.
-    cola(const cola& l) = delete;
+    Cola(const Cola& l) = delete;
 
     // El operador = (asignación) está deshabilitado.
-    void operator=(const cola& l) = delete;
+    void operator=(const Cola& l) = delete;
 
     // Destructor.
-    ~cola();
+    ~Cola();
 };
 
 #endif

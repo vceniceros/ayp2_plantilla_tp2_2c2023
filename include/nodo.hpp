@@ -2,28 +2,28 @@
 #define NODO_HPP
 
 template<typename T>
-class nodo {
+class Nodo {
 private:
     T dato{};
-    nodo<T>* siguiente;
+    Nodo<T>* siguiente;
 public:
     // Constructor.
-    nodo(T dato);
+    Nodo(T dato);
 
     // Pre: -
     // Post: Devuelve un puntero al nodo siguiente.
-    nodo<T>* obtener_siguiente();
+    Nodo<T>* obtener_siguiente();
 
     // Pre: -
     // Post: Cambia el puntero al nodo siguiente.
-    void cambiar_siguiente(nodo<T>* nuevo);
+    void cambiar_siguiente(Nodo<T>* nuevo);
 
     // Pre: -
     // Post: Devuelve el dato almacenado.
     T obtener_dato();
 
     // Destructor.
-    ~nodo();
+    ~Nodo();
 };
 
 #endif
