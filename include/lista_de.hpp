@@ -18,9 +18,9 @@ class Lista_exception : public std::exception {
 template<typename T>
 class Lista_de {
 private:
-    Nodo_de <T>* primer_nodo;
-    Nodo_de <T>* ultimo_nodo;
-    Nodo_de <T>* cursor;
+    Nodo_de<T>* primer_nodo;
+    Nodo_de<T>* ultimo_nodo;
+    Nodo_de<T>* cursor;
     // Nota: pueden no utilizar el índice. Estado inicial / no válido = -1.
     // La lista es 0-indexed.
     int indice_cursor;
@@ -28,7 +28,7 @@ private:
 
     // Pre: El índice debe ser menor que la cantidad de datos.
     // Post: Devuelve un puntero al nodo asociado al índice deseado.
-    Nodo_de <T>* obtener_nodo(size_t indice);
+    Nodo_de<T>* obtener_nodo(size_t indice);
 
 public:
     // Constructor.

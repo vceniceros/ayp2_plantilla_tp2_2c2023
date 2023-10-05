@@ -8,7 +8,7 @@ protected:
 };
 
 // primero() y ultimo() queda probado.
-TEST_F(lista_de_tests, alta) {
+TEST_F(Lista_de_tests, alta) {
     lista.alta(2);
     EXPECT_EQ(lista.primero(), 2);
     EXPECT_EQ(lista.ultimo(), 2);
@@ -19,7 +19,7 @@ TEST_F(lista_de_tests, alta) {
     EXPECT_EQ(lista.ultimo(), 3);
 }
 
-TEST_F(lista_de_tests, baja) {
+TEST_F(Lista_de_tests, baja) {
     lista.alta(1);
     lista.alta(3);
 
@@ -29,13 +29,13 @@ TEST_F(lista_de_tests, baja) {
     EXPECT_EQ(lista.ultimo(), 1);
 }
 
-TEST_F(lista_de_tests, baja_maneja_lista_vacia) {
+TEST_F(Lista_de_tests, baja_maneja_lista_vacia) {
     lista.alta(1);
     lista.baja();
     EXPECT_THROW(lista.baja(), Lista_exception);
 }
 
-TEST_F(lista_de_tests, elemento) {
+TEST_F(Lista_de_tests, elemento) {
     lista.alta(1);
     lista.alta(2, 0);
     lista.alta(3);
@@ -47,7 +47,7 @@ TEST_F(lista_de_tests, elemento) {
     EXPECT_EQ(lista.elemento(1), lista.ultimo());
 }
 
-TEST_F(lista_de_tests, elemento_maneja_indice_mayor_igual) {
+TEST_F(Lista_de_tests, elemento_maneja_indice_mayor_igual) {
     lista.alta(1);
     lista.alta(2);
     lista.alta(3);
@@ -57,7 +57,7 @@ TEST_F(lista_de_tests, elemento_maneja_indice_mayor_igual) {
     EXPECT_NO_THROW(lista.elemento(2));
 }
 
-TEST_F(lista_de_tests, alta_indice) {
+TEST_F(Lista_de_tests, alta_indice) {
     lista.alta(1, 0);
     lista.alta(2, 1);
     lista.alta(3, 1);
@@ -67,7 +67,7 @@ TEST_F(lista_de_tests, alta_indice) {
     EXPECT_EQ(lista.ultimo(), 2);
 }
 
-TEST_F(lista_de_tests, alta_indice_maneja_indice_mayor) {
+TEST_F(Lista_de_tests, alta_indice_maneja_indice_mayor) {
     lista.alta(1);
     lista.alta(2);
     lista.alta(3);
@@ -77,7 +77,7 @@ TEST_F(lista_de_tests, alta_indice_maneja_indice_mayor) {
     EXPECT_NO_THROW(lista.alta(6, 3));
 }
 
-TEST_F(lista_de_tests, baja_indice) {
+TEST_F(Lista_de_tests, baja_indice) {
     lista.alta(1);
     lista.alta(2);
     lista.alta(3, 1);
@@ -96,7 +96,7 @@ TEST_F(lista_de_tests, baja_indice) {
     EXPECT_EQ(lista.ultimo(), 4);
 }
 
-TEST_F(lista_de_tests, baja_indice_maneja_indice_mayor_igual) {
+TEST_F(Lista_de_tests, baja_indice_maneja_indice_mayor_igual) {
     lista.alta(1);
     lista.alta(2);
     lista.alta(3);
@@ -106,7 +106,7 @@ TEST_F(lista_de_tests, baja_indice_maneja_indice_mayor_igual) {
     EXPECT_NO_THROW(lista.baja(2));
 }
 
-TEST_F(lista_de_tests, vacio) {
+TEST_F(Lista_de_tests, vacio) {
     EXPECT_TRUE(lista.vacio());
 
     lista.alta(1);
@@ -116,7 +116,7 @@ TEST_F(lista_de_tests, vacio) {
     EXPECT_TRUE(lista.vacio());
 }
 
-TEST_F(lista_de_tests, tamanio) {
+TEST_F(Lista_de_tests, tamanio) {
     EXPECT_EQ(lista.tamanio(), 0);
 
     lista.alta(1);
@@ -128,7 +128,7 @@ TEST_F(lista_de_tests, tamanio) {
     EXPECT_EQ(lista.tamanio(), 2);
 }
 
-TEST_F(lista_de_tests, puede_avanzar) {
+TEST_F(Lista_de_tests, puede_avanzar) {
     EXPECT_FALSE(lista.puede_avanzar());
 
     lista.alta(1);
@@ -142,7 +142,7 @@ TEST_F(lista_de_tests, puede_avanzar) {
     EXPECT_TRUE(lista.puede_avanzar());
 }
 
-TEST_F(lista_de_tests, avanzar) {
+TEST_F(Lista_de_tests, avanzar) {
     lista.alta(1);
     lista.alta(2);
     lista.alta(3, 0);
@@ -157,7 +157,7 @@ TEST_F(lista_de_tests, avanzar) {
     EXPECT_EQ(lista.avanzar(false), 4);
 }
 
-TEST_F(lista_de_tests, avanzar_maneja_no_puede_avanzar) {
+TEST_F(Lista_de_tests, avanzar_maneja_no_puede_avanzar) {
     EXPECT_THROW(lista.avanzar(true), Lista_exception);
 
     lista.alta(1);
@@ -172,7 +172,7 @@ TEST_F(lista_de_tests, avanzar_maneja_no_puede_avanzar) {
     EXPECT_THROW(lista.avanzar(true), Lista_exception);
 }
 
-TEST_F(lista_de_tests, reiniciar_cursor) {
+TEST_F(Lista_de_tests, reiniciar_cursor) {
     lista.alta(1);
     lista.reiniciar_cursor(true);
     EXPECT_TRUE(lista.puede_avanzar());
@@ -210,10 +210,10 @@ TEST_F(lista_de_tests, reiniciar_cursor) {
     EXPECT_TRUE(lista.puede_avanzar());
 }*/
 
-TEST_F(lista_de_tests, primero_maneja_lista_vacia) {
+TEST_F(Lista_de_tests, primero_maneja_lista_vacia) {
     EXPECT_THROW(lista.primero(), Lista_exception);
 }
 
-TEST_F(lista_de_tests, ultimo_maneja_lista_vacia) {
+TEST_F(Lista_de_tests, ultimo_maneja_lista_vacia) {
     EXPECT_THROW(lista.ultimo(), Lista_exception);
 }

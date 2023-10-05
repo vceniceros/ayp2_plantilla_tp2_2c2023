@@ -17,8 +17,8 @@ class Cola_exception : public std::exception {
 template<typename T>
 class Cola {
 private:
-    Nodo <T>* primer_nodo;
-    Nodo <T>* ultimo_nodo;
+    Nodo<T>* primer_nodo;
+    Nodo<T>* ultimo_nodo;
     size_t cantidad_datos;
 public:
     // Constructor.

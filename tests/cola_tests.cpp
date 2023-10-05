@@ -8,7 +8,7 @@ protected:
 };
 
 // primero() y ultimo() queda probado.
-TEST_F(cola_tests, alta) {
+TEST_F(Cola_tests, alta) {
     cola1.alta(2);
     EXPECT_EQ(cola1.primero(), 2);
     EXPECT_EQ(cola1.ultimo(), 2);
@@ -19,7 +19,7 @@ TEST_F(cola_tests, alta) {
     EXPECT_EQ(cola1.ultimo(), 3);
 }
 
-TEST_F(cola_tests, baja) {
+TEST_F(Cola_tests, baja) {
     cola1.alta(1);
     cola1.alta(3);
 
@@ -29,11 +29,11 @@ TEST_F(cola_tests, baja) {
     EXPECT_EQ(cola1.ultimo(), 3);
 }
 
-TEST_F(cola_tests, baja_maneja_cola_vacia) {
+TEST_F(Cola_tests, baja_maneja_cola_vacia) {
     EXPECT_THROW(cola1.baja(), Cola_exception);
 }
 
-TEST_F(cola_tests, vacio) {
+TEST_F(Cola_tests, vacio) {
     EXPECT_TRUE(cola1.vacio());
 
     cola1.alta(1);
@@ -43,7 +43,7 @@ TEST_F(cola_tests, vacio) {
     EXPECT_TRUE(cola1.vacio());
 }
 
-TEST_F(cola_tests, tamanio) {
+TEST_F(Cola_tests, tamanio) {
     EXPECT_EQ(cola1.tamanio(), 0);
 
     cola1.alta(1);
@@ -55,10 +55,10 @@ TEST_F(cola_tests, tamanio) {
     EXPECT_EQ(cola1.tamanio(), 2);
 }
 
-TEST_F(cola_tests, primero_maneja_cola_vacia) {
+TEST_F(Cola_tests, primero_maneja_cola_vacia) {
     EXPECT_THROW(cola1.primero(), Cola_exception);
 }
 
-TEST_F(cola_tests, ultimo_maneja_cola_vacia) {
+TEST_F(Cola_tests, ultimo_maneja_cola_vacia) {
     EXPECT_THROW(cola1.ultimo(), Cola_exception);
 }

@@ -16,10 +16,6 @@ add_executable(ayp2_plantilla_tp2_2c2023
         main.cpp
         src/Evento.cpp
         src/Item.cpp
-        include/Cola.hpp
-        include/Lista_de.hpp
-        include/Nodo.hpp
-        include/Nodo_de.hpp
         # Otros archivos .cpp, de la forma src/Ejemplo.cpp
 )
 
