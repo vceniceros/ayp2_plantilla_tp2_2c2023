@@ -11,7 +11,7 @@ El programa se puede compilar utilizando el **CMakeLists.txt** que está en el r
 
 Al compilar con **CMake**, se deben agregar todos los archivos **.cpp** en la línea:
 
-> add_executable(ayp2_plantilla_tp1_2c2023 main.cpp #otros archivos#)
+> add_executable(ayp2_plantilla_tp2_2c2023 main.cpp #otros archivos#)
 
 ## Tests:
 
