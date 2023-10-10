@@ -22,6 +22,8 @@ private:
     Nodo<T>* primer_nodo;
     Nodo<T>* ultimo_nodo;
     size_t cantidad_datos;
+
+
 public:
     // Constructor.
     Cola(){
