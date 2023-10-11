@@ -11,15 +11,15 @@ public:
     // Constructor.
     Nodo_de(T dato){
         this->dato = dato;
-        this->siguiente = 0;
-        this->anterior = 0;
+        this->anterior = nullptr;
+        this->siguiente = nullptr;
     };
 
     // Constructor.
     Nodo_de(T dato, Nodo_de<T>* anterior, Nodo_de<T>* siguiente){
         this->dato = dato;
-        this->siguiente = siguiente;
         this->anterior = anterior;
+        this->siguiente = siguiente;
     };
 
     // Pre: -

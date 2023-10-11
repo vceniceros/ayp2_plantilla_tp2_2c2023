@@ -24,7 +24,7 @@ private:
     int indice_cursor;
     size_t cantidad_datos;
 
-    Nodo_de<T>* obtener_nodo(size_t indice) {
+    Nodo_de<T>*  obtener_nodo(size_t indice) {
         if (indice >= cantidad_datos || cantidad_datos == 0) {
             throw Lista_exception();
         }
@@ -81,7 +81,7 @@ public:
     // Pre: El índice debe ser menor que la cantidad de datos.
     // Post: Devuelve el dato en la posición deseada.
     T elemento(size_t indice){
-        if(cantidad_datos > indice){
+        if(indice < cantidad_datos){
             return obtener_nodo(indice)->obtener_dato();
         }else{
             throw Lista_exception();
@@ -97,10 +97,12 @@ public:
     // Pre: Se debe poder avanzar.
     // Post: Devuelve el dato del cursor actual y luego lo mueve una posición en la dirección deseada.
     T avanzar(bool siguiente){
-        if(!puede_avanzar()){
+        if(puede_avanzar()){
             T d = cursor->obtener_dato();
             cursor = cursor->obtener_siguiente();
             return d;
+        }else if(vacio()){
+            throw Lista_exception();
         }else{
             throw Lista_exception();
         }
@@ -218,8 +220,11 @@ public:
     T baja(size_t indice) {
         if (cantidad_datos == 0) {
             throw Lista_exception();
-        } else if (indice == cantidad_datos) {
-            return baja();
+        } else if(indice > cantidad_datos) {
+            throw Lista_exception();
+        }else if (indice == cantidad_datos) {
+                return baja();
+
         } else if (indice < cantidad_datos) {
             Nodo_de<T>* aux_baja = primer_nodo;
             T aux = aux_baja->obtener_dato();
