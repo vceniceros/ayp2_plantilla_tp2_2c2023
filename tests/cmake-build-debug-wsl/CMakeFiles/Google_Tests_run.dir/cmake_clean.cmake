@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o"
-  "CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o.d"
+  "CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o"
+  "CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o.d"
   "Google_Tests_run"
   "Google_Tests_run.pdb"
 )

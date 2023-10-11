@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/cola_tests.cpp" "CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o" "gcc" "CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o.d"
+  "/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/lista_de_tests.cpp" "CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o" "gcc" "CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o.d"
   )
 
 # Targets to which this target links.

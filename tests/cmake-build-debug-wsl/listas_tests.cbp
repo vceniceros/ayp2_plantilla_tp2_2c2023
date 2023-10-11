@@ -330,9 +330,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/cola_tests.cpp">
-			<Option target="Google_Tests_run"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/gtest_lib/googlemock/src/gmock-all.cc">
 			<Option target="gmock"/>
 		</Unit>
@@ -344,6 +341,9 @@
 		</Unit>
 		<Unit filename="/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/gtest_lib/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/lista_de_tests.cpp">
+			<Option target="Google_Tests_run"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

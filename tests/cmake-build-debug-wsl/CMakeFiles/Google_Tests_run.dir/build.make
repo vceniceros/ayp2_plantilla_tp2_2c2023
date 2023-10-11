@@ -69,28 +69,28 @@ include CMakeFiles/Google_Tests_run.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Google_Tests_run.dir/flags.make
 
-CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o: CMakeFiles/Google_Tests_run.dir/flags.make
-CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o: ../cola_tests.cpp
-CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o: CMakeFiles/Google_Tests_run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/cmake-build-debug-wsl/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o -MF CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o.d -o CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o -c "/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/cola_tests.cpp"
+CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o: CMakeFiles/Google_Tests_run.dir/flags.make
+CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o: ../lista_de_tests.cpp
+CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o: CMakeFiles/Google_Tests_run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/cmake-build-debug-wsl/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o -MF CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o.d -o CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o -c "/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/lista_de_tests.cpp"
 
-CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/cola_tests.cpp" > CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.i
+CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/lista_de_tests.cpp" > CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.i
 
-CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/cola_tests.cpp" -o CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.s
+CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2 con test/ayp2_plantilla_tp2_2c2023/tests/lista_de_tests.cpp" -o CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.s
 
 # Object files for target Google_Tests_run
 Google_Tests_run_OBJECTS = \
-"CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o"
+"CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o"
 
 # External object files for target Google_Tests_run
 Google_Tests_run_EXTERNAL_OBJECTS =
 
-Google_Tests_run: CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o
+Google_Tests_run: CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o
 Google_Tests_run: CMakeFiles/Google_Tests_run.dir/build.make
 Google_Tests_run: lib/libgtest.a
 Google_Tests_run: lib/libgtest_main.a

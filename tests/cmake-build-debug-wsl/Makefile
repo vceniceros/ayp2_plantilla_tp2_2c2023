@@ -226,29 +226,29 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f gtest_lib/googletest/CMakeFiles/gtest_main.dir/build.make gtest_lib/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-cola_tests.o: cola_tests.cpp.o
-.PHONY : cola_tests.o
+lista_de_tests.o: lista_de_tests.cpp.o
+.PHONY : lista_de_tests.o
 
 # target to build an object file
-cola_tests.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Google_Tests_run.dir/build.make CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.o
-.PHONY : cola_tests.cpp.o
+lista_de_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Google_Tests_run.dir/build.make CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o
+.PHONY : lista_de_tests.cpp.o
 
-cola_tests.i: cola_tests.cpp.i
-.PHONY : cola_tests.i
+lista_de_tests.i: lista_de_tests.cpp.i
+.PHONY : lista_de_tests.i
 
 # target to preprocess a source file
-cola_tests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Google_Tests_run.dir/build.make CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.i
-.PHONY : cola_tests.cpp.i
+lista_de_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Google_Tests_run.dir/build.make CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.i
+.PHONY : lista_de_tests.cpp.i
 
-cola_tests.s: cola_tests.cpp.s
-.PHONY : cola_tests.s
+lista_de_tests.s: lista_de_tests.cpp.s
+.PHONY : lista_de_tests.s
 
 # target to generate assembly for a file
-cola_tests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Google_Tests_run.dir/build.make CMakeFiles/Google_Tests_run.dir/cola_tests.cpp.s
-.PHONY : cola_tests.cpp.s
+lista_de_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Google_Tests_run.dir/build.make CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.s
+.PHONY : lista_de_tests.cpp.s
 
 # Help Target
 help:
@@ -267,9 +267,9 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... cola_tests.o"
-	@echo "... cola_tests.i"
-	@echo "... cola_tests.s"
+	@echo "... lista_de_tests.o"
+	@echo "... lista_de_tests.i"
+	@echo "... lista_de_tests.s"
 .PHONY : help
 
 
