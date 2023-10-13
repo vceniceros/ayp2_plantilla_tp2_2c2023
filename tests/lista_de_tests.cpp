@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "Lista_de.hpp"
+#include "lista_de.hpp"
 
 class Lista_de_tests : public ::testing::Test {
 protected:
