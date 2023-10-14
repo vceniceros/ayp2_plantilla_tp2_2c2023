@@ -338,13 +338,9 @@ CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o: ../lista_de_tests.cpp \
   ../gtest_lib/googletest/include/gtest/gtest-typed-test.h \
   ../gtest_lib/googletest/include/gtest/gtest_pred_impl.h \
   ../gtest_lib/googletest/include/gtest/gtest_prod.h \
-  /mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2\ con\ test/ayp2_plantilla_tp2_2c2023/include/Lista_de.hpp \
-  /mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2\ con\ test/ayp2_plantilla_tp2_2c2023/include/Nodo_de.hpp
+  /mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2\ con\ test/ayp2_plantilla_tp2_2c2023/include/lista_de.hpp \
+  /mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2\ con\ test/ayp2_plantilla_tp2_2c2023/include/nodo_de.hpp
 
-
-/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2\ con\ test/ayp2_plantilla_tp2_2c2023/include/Nodo_de.hpp:
-
-/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2\ con\ test/ayp2_plantilla_tp2_2c2023/include/Lista_de.hpp:
 
 ../gtest_lib/googletest/include/gtest/gtest-test-part.h:
 
@@ -433,6 +429,8 @@ CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o: ../lista_de_tests.cpp \
 /usr/include/c++/11/condition_variable:
 
 /usr/include/regex.h:
+
+/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2\ con\ test/ayp2_plantilla_tp2_2c2023/include/lista_de.hpp:
 
 /usr/include/linux/close_range.h:
 
@@ -861,6 +859,8 @@ CMakeFiles/Google_Tests_run.dir/lista_de_tests.cpp.o: ../lista_de_tests.cpp \
 /usr/include/c++/11/stdexcept:
 
 /usr/include/c++/11/exception:
+
+/mnt/c/Users/valen/OneDrive/Documents/GitHub/tp2\ con\ test/ayp2_plantilla_tp2_2c2023/include/nodo_de.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
