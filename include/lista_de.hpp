@@ -140,6 +140,8 @@ T Lista_de<T>::baja() {
         ultimo_nodo = ultimo_nodo->obtener_anterior();
         if(cantidad_datos == 1){
             primer_nodo = nullptr;
+            ultimo_nodo = nullptr;
+            reiniciar_cursor(true);
         }
         if(indice_cursor == cantidad_datos){
             reiniciar_cursor(true);
